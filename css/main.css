@@ -1,0 +1,540 @@
+/* * {
+    outline: 1px solid #ddd;
+} */
+
+:root {
+    --mc: #326aff;
+}
+
+
+.header {
+    margin: 0 auto;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_wrap h1 {
+    width: 170px;
+}
+
+.header_wrap>ul {
+    display: flex;
+}
+
+.header_wrap .header_gnb {
+    gap: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.header_wrap .header_right {
+    display: flex;
+}
+
+.header_wrap .header_right>ul {
+    display: flex;
+}
+
+.header_wrap .header_login {
+    gap: 17px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 0 auto;
+    align-items: center;
+}
+
+.header_wrap .header_login li {
+    position: relative;
+}
+
+.header_wrap .header_login li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translate(50%, -50%);
+    width: 2px;
+    height: 2px;
+    background: #666;
+}
+
+.header_wrap .header_icon {
+    margin: 0 0 0 20px;
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+.main_visual {
+    position: relative;
+}
+
+.main_visual .visual_box {
+    height: calc(100vh - 120px);
+    position: relative;
+}
+
+.main_visual .visual01 {
+    background: url(../images/main01.jpg);
+}
+
+.main_visual .visual02 {
+    background: url(../images/main02.png);
+}
+
+.main_visual .visual03 {
+    background: url(../images/main03.jpg);
+}
+
+.main_visual .visual04 {
+    background: url(../images/main04.jpg);
+}
+
+.main_visual .visual05 {
+    background: url(../images/main05.jpg);
+}
+
+.main_visual .visual_txt {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.main_visual .visual_txt strong {
+    display: block;
+    font-size: 23px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+.main_visual .visual_txt h2 {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+}
+
+.main_visual .visual_txt p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.main_visual .visual_page {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #fff;
+}
+
+.main_visual .visual_page>* {
+    flex: 1;
+}
+
+.main_visual .visual_page h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.main_visual .visual_page p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* <상단 메인배너 - 다음 슬라이드 스테이 타임 > */
+.main_visual .visual_page {
+    position: absolute;
+    bottom: 5%;
+}
+
+.main_visual .visual_page li {
+    position: relative;
+    width: 100%;
+}
+
+.main_visual .visual_page li::before {
+    content: "";
+    position: absolute;
+    bottom: 130%;
+    left: 0;
+    width: 250px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.main_visual .visual_page li::after {
+    content: "";
+    position: absolute;
+    bottom: 130%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--mc);
+}
+
+.main_visual .visual_page li.on::after {
+    width: 250px;
+    transition: 3s;
+}
+
+
+
+
+
+
+
+
+
+.main_product {
+    padding: 100px 0;
+}
+
+.main_product .product_box {
+    display: flex;
+    gap: 15px;
+}
+
+.main_product .product_box>* {
+    flex: 1;
+}
+
+.main_product .product {
+    height: 500px;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main_product .product01 {
+    background: url(../images/prodouct01.jpg) no-repeat center bottom;
+}
+
+.main_product .product02 {
+    background: url(../images/prodouct02.jpg) no-repeat center bottom;
+}
+
+.main_product .product03 {
+    background: url(../images/prodouct03.jpg) no-repeat center top;
+}
+
+.main_product .product03::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 0.2;
+}
+
+.main_product .product04 {
+    background: url(../images/prodouct04.jpg) no-repeat center bottom;
+}
+
+.main_product .product {
+    position: relative;
+    padding: 35px;
+}
+
+.main_product .product h3 {
+    position: relative;
+    font-size: 23px;
+}
+
+/* .main_product .product h3::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+} */
+
+.main_product .product_txt {
+    position: absolute;
+    bottom: 30px;
+}
+
+.main_product .product_txt strong {
+    display: block;
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.main_product .product_txt p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+.main_event {
+    padding: 100px 0;
+}
+
+.main_event .event_wrap {
+    position: relative;
+}
+
+.main_event .event_txt {
+    height: 800px;
+}
+
+.main_event .event01 {
+    background: url(../images/event01.png) no-repeat center center/cover;
+}
+
+.main_event .event02 {
+    background: url(../images/event02.png) no-repeat center center/cover;
+}
+
+.main_event .event03 {
+    background: url(../images/event03.png) no-repeat center center/cover;
+}
+
+.main_event .event04 {
+    background: url(../images/event04.png) no-repeat center center/cover;
+}
+
+.main_event .event05 {
+    background: url(../images/event05.png) no-repeat center center/cover;
+}
+
+.main_event .event06 {
+    background: url(../images/event06.png) no-repeat center center/cover;
+}
+
+.main_event .evtxt {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    text-align: center;
+    color: #fff;
+}
+
+.main_event .event_txt strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+.main_event .event_txt h3 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+}
+
+.main_event .event_txt p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+.main_event .event_box {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0);
+}
+
+.main_event .event_box>* {
+    flex: 1;
+}
+
+.main_event .event_box .ev {
+    font-size: 20px;
+    padding: 60px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.main_event .event_box .ev i {
+    margin: 0 0 10px 0;
+}
+
+.main_event .event_box .ev:hover {
+    background: var(--mc);
+}
+
+.main_event .event_box .ev p {
+    position: relative;
+}
+
+.main_event .event_box .ev~.ev p::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: -120%;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.main_content {
+    padding: 100px 0;
+}
+
+.main_content .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* .main_content .content>* {
+    flex: 1;
+} */
+
+.main_content .content .left {
+    position: sticky;
+    top: 0;
+}
+
+.main_content .content .right_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.main_content .content .right_box figure {
+    width: 370px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+.main_content .content .right_con figcaption {
+    padding: 10px;
+}
+
+.main_content .content figcaption h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 13px 0;
+}
+
+.main_content .content figcaption p {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--mc);
+    padding: 7px 20px;
+    border: 1px solid var(--mc);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 50px 0;
+    background: #111b2a;
+    color: #aaa;
+}
+
+.footer .footer_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer_logo {
+    margin: 0 0 40px 0;
+}
+
+.footer .footer_gnb {
+    font-size: 17px;
+}
+
+.footer .footer_gnb address {
+    margin: 0 0 10px 0;
+}
+
+.footer .footer_gnb ul {
+    display: flex;
+    gap: 25px;
+    margin: 0 0 10px 0;
+}
+
+.footer .footer_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .footer_icon {
+    display: flex;
+    justify-content: end;
+    gap: 7px;
+    font-size: 20px;
+    margin: 0 0 80px 0;
+}
+
+.footer .footer_icon i {
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+.footer .footer_a {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    text-align: end;
+}
