@@ -504,6 +504,17 @@
     background: url(../images/event01.png) no-repeat center center/cover;
 }
 
+.main_event .event01::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 0.3;
+}
+
 .main_event .event02 {
     background: url(../images/event02.png) no-repeat center center/cover;
 }
@@ -598,6 +609,54 @@
     width: 100%;
     height: 1px;
     background: #fff;
+}
+
+.main_event .marrow {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .main_event .event_txt {
+        height: 600px;
+    }
+
+    .main_event .event_box {
+        display: none;
+    }
+
+    .main_event .event_txt strong {
+        font-size: 16px;
+    }
+
+    .main_event .event_txt h3 {
+        font-size: 45px;
+        margin: 0 0 40px 0;
+    }
+
+    .main_event .event_txt p {
+        font-size: 17px;
+        line-height: 23px;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+    }
+
+    .main_event .marrow {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        padding: 15px;
+    }
+
+    .main_event .marrow i {
+        font-size: 25px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 15px 7px;
+    }
 }
 
 

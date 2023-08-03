@@ -29,6 +29,12 @@ $(function () {
     })
 
 
+
+
+
+
+
+
     // 메인비쥬얼 : 이미지 다음페이지
     $('.visual_wrap').slick({
         arrows: false,
@@ -52,20 +58,25 @@ $(function () {
 
 
 
-    // 메인이벤트 : 이미지 다음페이지
+    // 메인이벤트 : 이미지 변경
     $('.event_bg').slick({
         arrows: false,
-        // autoplay: false,
-        // autoplaySpeed: 3000,
         speed: 500,
         fade: true,
     });
 
-    // 메인이벤트 : 화살표
-
+    // 메인이벤트 : 이미지별 hover할 텍스트
     $('.main_event .event_box .ev').on('mouseenter', function () {
         let idx = $(this).index();
         $('.event_bg').slick('slickGoTo', idx)
+    })
+
+    //@media 비쥬얼 : 화살표
+    $('.main_event .marrow .left').on('click', function () {
+        $('.event_bg').slick('slickPrev')
+    })
+    $('.main_event .marrow .right').on('click', function () {
+        $('.event_bg').slick('slickNext')
     })
 
 });
