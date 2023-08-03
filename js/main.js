@@ -19,6 +19,16 @@ $(function () {
     });
 
 
+
+
+
+
+    //@media : header 메뉴바
+    $('.header_icon').on('click', function () {
+        $('.header_gnb').toggleClass('on')
+    })
+
+
     // 메인비쥬얼 : 이미지 다음페이지
     $('.visual_wrap').slick({
         arrows: false,
