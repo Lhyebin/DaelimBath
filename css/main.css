@@ -22,7 +22,7 @@
 
 .header_wrap .header_gnb {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 100px;
 }
 
@@ -45,7 +45,7 @@
 
 .header_wrap .header_gnb>ul {
     display: flex;
-    gap: 40px;
+    gap: 50px;
 }
 
 .header_wrap .header_gnb>ul>li {
@@ -67,7 +67,7 @@
 
     font-size: 17px;
     font-weight: 400;
-    line-height: 60px;
+    line-height: 45px;
 }
 
 .header_wrap .header_gnb:hover>ul>li .sub {
@@ -199,23 +199,46 @@
 }
 
 .main_visual .visual01 {
-    background: url(../images/main01.jpg);
+    background: url(../images/main01.jpg) no-repeat;
 }
 
 .main_visual .visual02 {
-    background: url(../images/main02.png);
+    background: url(../images/main02.png) no-repeat;
 }
 
 .main_visual .visual03 {
-    background: url(../images/main03.jpg);
+    background: url(../images/main03.jpg) no-repeat;
 }
 
+.main_visual .visual03::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+
 .main_visual .visual04 {
-    background: url(../images/main04.jpg);
+    background: url(../images/main04.jpg) no-repeat;
 }
 
 .main_visual .visual05 {
-    background: url(../images/main05.jpg);
+    background: url(../images/main05.jpg) no-repeat;
+}
+
+.main_visual .visual05::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    opacity: 0.5;
 }
 
 .main_visual .visual_txt {
@@ -230,26 +253,26 @@
 
 .main_visual .visual_txt strong {
     display: block;
-    font-size: 23px;
+    font-size: 24px;
     font-weight: 300;
     margin: 0 0 20px 0;
 }
 
 .main_visual .visual_txt h2 {
-    font-size: 60px;
+    font-size: 62px;
     font-weight: 500;
     margin: 0 0 50px 0;
 }
 
 .main_visual .visual_txt p {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 30px;
 }
 
 .main_visual .visual_page {
     position: absolute;
-    bottom: 50px;
+    top: 88%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -265,13 +288,13 @@
 }
 
 .main_visual .visual_page h3 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 500;
     margin: 0 0 5px 0;
 }
 
 .main_visual .visual_page p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -388,7 +411,7 @@
     right: 0px;
     bottom: 0px;
     background-color: #000;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 .main_product .product04 {
@@ -547,20 +570,20 @@
 
 .main_event .event_txt strong {
     display: block;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
     margin: 0 0 20px 0;
 }
 
 .main_event .event_txt h3 {
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 62px;
+    font-weight: 500;
     margin: 0 0 50px 0;
 }
 
 .main_event .event_txt p {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 300;
     margin: 0 0 20px 0;
 }
