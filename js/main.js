@@ -28,6 +28,13 @@ $(function () {
         $('.header_gnb').toggleClass('on')
     })
 
+    $('.header_gnb>ul>li>a').on('click', function (e) {
+        e.preventDefault();
+        $(this).next().slideToggle();
+        $(this).parent().siblings().find('.sub').slideUp();
+        // -> 마지막줄 반응형에서 다른 서브메뉴 클릭했을때 이전 서브메뉴 들어가게하기
+    })
+
 
 
 
